@@ -16,7 +16,7 @@
 <main class="wrap">
   <article class="card">
     <h1>Privacy Policy — ZIPSPEED by AnakinYoo</h1>
-    <p class="meta">Package: com.aistudio.zipspeed.zskt • Version 85.0.0 • Updated 26 September 2026</p>
+    <p class="meta">Package: com.aistudio.zipspeed.zskt • Version 85.0.0 • Updated 27 September 2026</p>
     <p class="notice">This policy describes the current v85 build. If Ads, Billing, accounts, new permissions, or new measurement providers are added later, this policy and Google Play Data Safety information must be updated before release.</p>
 
     <h2>ภาษาไทย</h2>
@@ -26,7 +26,7 @@
     <ul>
       <li>แอปส่งคำขอดาวน์โหลด อัปโหลด และ HTTP latency probe ไปยังเซิร์ฟเวอร์ที่เปิดใช้งานใน Server Directory ปัจจุบันใช้ Cloudflare Network Quality endpoint</li>
       <li>คำขออินเทอร์เน็ตย่อมเปิดเผย IP สาธารณะต่อผู้ให้บริการปลายทางตามธรรมชาติของการเชื่อมต่อ</li>
-      <li>แอปอ่านค่าที่เซิร์ฟเวอร์รายงาน เช่น IP สาธารณะ รหัส Edge และประเทศ เพื่อแสดงสถานะเครือข่าย โดยไม่สร้างพิกัดศูนย์ข้อมูลขึ้นเอง</li>
+      <li>แอปอ่านค่าที่เซิร์ฟเวอร์รายงาน เช่น IP สาธารณะ รหัส Edge และประเทศ เพื่อแสดงสถานะเครือข่าย ประเทศเป็นข้อมูลตำแหน่งโดยประมาณที่อนุมาน/รายงานจากเครือข่าย ไม่ใช่ GPS และแอปไม่สร้างพิกัดศูนย์ข้อมูลขึ้นเอง</li>
       <li>หาก ISP/ASN หรือข้อมูลอื่นไม่มีแหล่งที่ตรวจสอบได้ แอปจะแสดง <code>--</code> แทนการคาดเดา</li>
     </ul>
 
@@ -68,7 +68,7 @@
     <ul>
       <li>The app sends download, upload, and HTTP latency probes to enabled endpoints in its Server Directory. The current provider is Cloudflare Network Quality.</li>
       <li>Internet requests inherently disclose the device's public IP address to the destination service.</li>
-      <li>The app displays server-reported public IP, edge code, and country. It does not invent physical datacenter coordinates.</li>
+      <li>The app displays server-reported public IP, edge code, and country. Country is approximate location inferred/reported from network information, not GPS, and the app does not invent physical datacenter coordinates.</li>
       <li>Unavailable ISP/ASN or other unverified fields are shown as <code>--</code>.</li>
     </ul>
 
