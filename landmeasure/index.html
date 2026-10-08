@@ -20,7 +20,7 @@
 <main class="wrap">
   <article class="card">
     <div class="brand"><div class="mark">LM</div><div><h1>LandMeasure Global</h1><div class="meta">Privacy Policy — by AnakinYoo</div></div></div>
-    <p class="meta">Package: <code>com.anakinyoo.landmeasure</code> • Version 1.5.0 • Updated 7 October 2026</p>
+    <p class="meta">Package: <code>com.anakinyoo.landmeasure</code> • Version 1.5.0 • Updated 9 October 2026</p>
     <p class="notice">LandMeasure Global helps users estimate land boundaries and area from user-selected map points, manually entered coordinates, and foreground device location. It does not present estimates as legal survey results.</p>
 
     <h2>English</h2>
@@ -33,7 +33,7 @@
 
     <h3>Search, maps, and official parcel lookup</h3>
     <ul>
-      <li>Place/address search uses Android Geocoder. Depending on the device, the platform geocoder may use a network-backed service to resolve the user's search text.</li>
+      <li>Place/address search uses Android Geocoder only after the user explicitly starts a place/address search. Depending on the device, the platform geocoder may use a network-backed service to resolve that user-entered search text. GPS, manual-coordinate, map-tap, marker-drag, saved-parcel load, and walking-point changes do not trigger automatic reverse geocoding.</li>
       <li>Google Maps SDK for Android may process request/device metadata, IP address, crash/diagnostic information, a pseudonymous Maps SDK identifier, and map interaction events under Google's own terms and privacy practices.</li>
       <li>When the user explicitly requests a Netherlands parcel lookup, the app sends a small bounding box derived from the latest boundary point to the official PDOK/Kadaster HTTPS endpoint. This request is not sent automatically.</li>
       <li>The returned PDOK/Kadaster parcel result is kept separately from the user's measurement and saved-parcel history and is presented as indicative cadastral information, not a replacement for a legal survey.</li>
@@ -68,7 +68,7 @@
 
       <h3>การค้นหา แผนที่ และข้อมูลแปลงทางการ</h3>
       <ul>
-        <li>การค้นหาสถานที่/ที่อยู่ใช้ Android Geocoder ซึ่งอาจใช้บริการเครือข่ายของแพลตฟอร์มขึ้นอยู่กับอุปกรณ์</li>
+        <li>การค้นหาสถานที่/ที่อยู่ใช้ Android Geocoder เฉพาะเมื่อผู้ใช้สั่งค้นหาด้วยตนเอง โดยบริการของแพลตฟอร์มอาจใช้เครือข่ายขึ้นอยู่กับอุปกรณ์ การเพิ่มหรือแก้จุดจาก GPS พิกัดที่กรอกเอง การแตะแผนที่ การลากหมุด การโหลดแปลงที่บันทึก และจุดจากโหมดเดินวัด จะไม่เรียก reverse geocoding อัตโนมัติ</li>
         <li>Google Maps SDK for Android อาจประมวลผลข้อมูลคำขอ/อุปกรณ์ IP ข้อมูลวินิจฉัย ตัวระบุ Maps SDK แบบนามแฝง และเหตุการณ์การใช้งานแผนที่ตามนโยบายของ Google</li>
         <li>เมื่อผู้ใช้กดค้นหาแปลงประเทศเนเธอร์แลนด์เอง แอปจะส่ง bounding box ขนาดเล็กที่ได้จากจุดขอบเขตล่าสุดไปยังบริการ HTTPS ทางการของ PDOK/Kadaster คำขอนี้ไม่ถูกส่งอัตโนมัติ</li>
         <li>ผลจาก PDOK/Kadaster แยกจากผลการวัดและประวัติแปลงของผู้ใช้ และแสดงเป็นข้อมูลทะเบียนที่ดินเชิงประกอบ ไม่ใช่ผลสำรวจเขตทางกฎหมาย</li>
